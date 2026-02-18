@@ -12,6 +12,7 @@ import PropertyDetails from './pages/PropertyDetails';
 
 import BookingPage from './pages/BookingPage';
 import OwnerDashboard from './pages/OwnerDashboard';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/dashboard" element={<ProtectedRoute roles={['owner', 'admin']}><OwnerDashboard /></ProtectedRoute>} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
